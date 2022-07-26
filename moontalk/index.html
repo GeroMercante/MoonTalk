@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonTalk| GM</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Moon Talk</a>
+        <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Trabajos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="./img/stars.png" id="stars">
+        <img src="./img/moon.png" id="moon">
+        <img src="./img/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moon Talk</h2>
+        <a href="#sec" id="btn">Explorar</a>
+        <img src="./img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Kidd Keo Moon Talk   |  Geronimo Mercante</h2>
+        <p>  <br> Hmm, hmm, hmm
+             <br> Ayy, yeah <br>
+             <br> Once again on the road
+             <br> Once I think about you
+             <br> I don't wanna be broke
+             <br> That's the shit that I do
+             <br> Otra vez que me fui
+             <br> Ma', no encuentro la luz
+             <br> No estoy cerca de ti
+             <br> Pero estoy para el flush
+             <br> I put the bag in the cap (Yeah)
+             <br> I'm tryna get it out the trap
+             <br> I'm tryna get it, get fat
+             <br> I love you more when I'm back
+             <br> No ha cambiao' na' de na'
+             <br> Corrí ma' y no miré atrás
+             <br> Soy de ningún lugar
+             <br> Sin alas aprendí a volar, ey
+             <br> Hot the block hanging with them crooks
+             <br> You're out the club hanging with them fools
+             <br> Back to back, back to bust them woods
+             <br> Back to home where you change your shoes
+             <br> Quiero dormir contigo,
+             <br> Mucho tiempo estando perdido
+             <br> Está mi boca y tu ombligo
+             <br> Estoy pa' ti, te lo digo
+             <br>
+             <br> Sé que estás en mi cama
+             <br> Arriba de mi ventana
+             <br> I be countin' them commas
+             <br> I don't think 'bout the drama
+             <br> Sé que estás en mi cama
+             <br> Arriba de mi ventana
+             <br> I be countin' them commas
+             <br> I don't think 'bout the drama
+             <br>
+             <br> It's the money and you
+             <br> It's the money and you
+             <br> Ahora estoy por aquí
+             <br> Solo que no estás tú
+             <br> It's the money and you
+             <br> It's the money and you
+             <br> Ahora estoy por aquí
+             <br> Solo que no estás tú
+             <br>
+             <br> Enamorao' de tu gusto fino
+             <br> Inseguro cuando estoy contigo
+             <br> Alvariño dulce, blanco el vino
+             <br> Aparcao' fumando con mis latinos
+             <br> Mama cleaning the dishes
+             <br> Me on the road to the riches
+             <br> I'll be back, never finished
+             <br> I'm a hustler, I'm for the business
+             <br> Money Man, baby, mira
+             <br> Cómo llego a la cima
+             <br> The way she moves, she a killer
+             <br> Me parte en dos si se pira
+             <br> Te conocí sin quererlo
+             <br> Y tu corazón yo quererlo
+             <br> Now I pull up on a Benz though
+             <br> Ven, mami, ven, dame un beso
+             <br> She in love with my old shit
+             <br> But she fuck with my new shit
+             <br> Now she cool with my broskis
+             <br> Baby hanging with goonies
+             <br> Está to' chillin', mami, to' está bien
+             <br> Un par de weekend y vuelvo a tus pies
+             <br> Te voy a tirar todos los billete' de cien
+             <br> Tirá' en la cama se quita el sostén
+             <br>
+             <br> Sé que estás en mi cama
+             <br> Arriba de mi ventana
+             <br> I be countin' them commas
+             <br> I don't think 'bout the drama
+             <br> Sé que estás en mi cama
+             <br> Arriba de mi ventana
+             <br> I be countin' them commas
+             <br> I don't think 'bout the drama
+             <br>
+             <br> It's the money and you
+             <br> It's the money and you
+             <br> Ahora estoy por aquí
+             <br> Solo que no estás tú
+             <br> It's the money and you
+             <br> It's the money and you
+             <br> Ahora estoy por aquí
+             <br> Solo que no estás tú</p>
+    </div>
+
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+        
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value  * 4 + 'px';
+            text.style.marginTop = value  * 1.5 + 'px';
+            btn.style.marginTop = value  * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+
+    </script>
+
+</body>
+</html>
